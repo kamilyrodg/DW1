@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+    font-family: 'Bangers', cursive;
+    color: white; /* 👈 deixa tudo branco por padrão */
+    
+    background-image: url("fundo.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+main {
+    background: rgba(255, 148, 148, 0.2);
+    backdrop-filter: blur(10px);
+    
+    padding: 30px;
+    border-radius: 15px;
+
+    width: 300px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: white;
+     font-family: "Bebas Neue", sans-serif;;
+    text-align: center;
+
+}
+
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: white;
+}
+
+/* Inputs */
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Botão */
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #850000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* Resultado */
+#resposta {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}

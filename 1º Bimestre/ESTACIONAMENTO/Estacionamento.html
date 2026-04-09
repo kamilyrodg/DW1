@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estacionamento.css">
+    <title>Estacionamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Estacionamento</h1>
+    <main>
+        <label for="inputVeiculo">Veículo Grande</label>
+        <input type="checkbox" id="inputVeiculo">
+        <br><br>
+        <label for="inputCF">Cliente Frequente</label>
+        <input type="checkbox" id="inputCF">
+        <br><br>
+        <label for="inputHoras">Horas estacionadas:</label>
+        <input type="number" id="inputHoras">
+        <br><br>
+        <input type="button" value="Calcular" onclick="fCalcular()">
+        <br><br>
+        <label for="resposta">Resposta:</label>
+        <div id="resposta"></div>
+    </main>
+</header>
+    <script src="Estacionamento.js"></script>
+</body>
+</html>

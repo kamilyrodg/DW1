@@ -1,0 +1,105 @@
+/* Fundo geral branco */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #003366; /* Azul escuro */
+    background-image: url("funds.jpg");
+}
+
+/* Header simples */
+header {
+    background-color: #e6f0ff; /* azul bem clarinho */
+    color: #003366;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    border-bottom: 3px solid #99c2ff;
+}
+
+/* Container geral */
+main {
+    max-width: 400px;
+    margin: 60px 0 0 50px; 
+    padding: 20px;
+    background: #f5f8ff;
+    border: 1px solid #d0d8f0;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 60, 130, 0.1);
+    max-height: 500px;   /* limita a altura */
+    overflow-y: auto;    /* adiciona scroll se precisar */
+}
+
+
+/* Títulos */
+h1 {
+    color: #004c99;
+    border-left: 5px solid #66a3ff;
+    padding-left: 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Inputs de texto e número */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 2px solid #99c2ff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.4);
+}
+
+/* Botão */
+input[type="button"] {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #004c99;
+}
+
+/* Resultados */
+span {
+    font-weight: bold;
+    color: #002244;
+}
+
+/* Footer vermelho para avisos */
+/* Footer fixo embaixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e6f0ff;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e Conceitos</title>
+    <link rel="stylesheet" href="Notas_Conceitos.css">
+</head>
+<body>
+    <header>
+        Média de aproveitamento:
+    </header>
+        <main>
+            <label for="inputRA">Ra:</label>
+            <input type="number" id="inputRA">
+            <br><br>
+
+            <label for="inputNome">Nome:</label>
+            <input type="text" id="inputNome">
+            <br><br>
+
+            <label for="inputNota1">Nota 1:</label>
+            <input type="number" id="inputNota1" min="0" max="10">
+            <br>
+
+            <label for="inputNota2">Nota 2:</label>
+            <input type="number" id="inputNota2" min="0" max="10">
+            <br>
+
+            <label for="inputNota3">Nota 3:</label>
+            <input type="number" id="inputNota3" min="0" max="10">
+            <br>
+
+            <label for="inputNota4">Nota 4:</label>
+            <input type="number" id="inputNota4" min="0" max="10">
+            <br><br>
+
+            <label for="inputME">Média de exercícios:</label>
+            <input type="number" id="inputME" min="0" max="10">
+            <br><br>
+
+            <input type="button" value="Calcular" onclick="fCalcular()">
+            <br>
+
+            <h1>Resultado:</h1>
+
+            <label for="Ra2">Ra:</label>
+            <span id="Ra2"></span>
+            <br><br>
+
+            <label for="Nome2">Nome:</label>
+            <span id="Nome2"></span>
+            <br><br>
+
+            <label for="Me2">Média de exercícios:</label>
+            <span id="Me2"></span>
+            <br><br>
+
+            <label for="media">Média de aproveitamento:</label>
+            <span id="resposta"></span>
+            <br><br>
+
+            <label for="situacao">Situação:</label>
+            <span id="situacao"></span>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src="Notas_Conceitos.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELTA FORCE</title>
+    <link rel="stylesheet" href="DeltaForce.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Delta Force</h1>
+
+    <label>A</label>
+    <input type="text" id="inputA">
+
+    <label>B</label>
+    <input type="text" id="inputB">
+
+    <label>C</label>
+    <input type="text" id="inputC">
+
+    <br><br>
+
+    <button onclick="FBhaskara()">Calcular</button>
+
+    <br><br>
+
+    <label>X1:</label>
+    <span id="X1">...</span>
+    <br>
+
+    <label>X2:</label>
+    <span id="X2">...</span>
+</div>
+
+<script>
+function FBhaskara(){
+    let A = parseFloat(document.getElementById("inputA").value);
+    let B = parseFloat(document.getElementById("inputB").value);
+    let C = parseFloat(document.getElementById("inputC").value);
+
+    let delta = B**2 - 4*A*C;
+
+    if (delta < 0) {
+        document.getElementById("X1").innerHTML = "Sem solução real";
+        document.getElementById("X2").innerHTML = "Sem solução real";
+        return;
+    }
+
+    let raiz = Math.sqrt(delta);
+
+    let x1 = (-B + raiz)/(2*A);
+    let x2 = (-B - raiz)/(2*A);
+
+    document.getElementById("X1").innerHTML = x1.toFixed(2);
+    document.getElementById("X2").innerHTML = x2.toFixed(2);
+}
+</script>
+
+</body>
+</html>

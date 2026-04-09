@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="IMC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+       IMC Alvinegro:
+    </header>
+
+    <main>
+     <section>
+          <h1>IMC</h1>
+         <br>
+
+         <label for="inputAltura">Altura:</label>
+         <input type="text" id="inputAltura">
+         <br>
+
+         <label for="inputPeso">Peso:</label>
+         <input type="text" id="inputPeso">
+         <br><br>
+
+         <input type="button" value="Calcular" onclick="FCalcule()">
+         <br><br>
+
+         <label for="inputResposta">IMC:</label>
+         <span id="inputResposta"></span>
+         <br><br>
+         <div id="erroMsg"></div>
+      </section>
+    </main>
+
+    <footer>
+        Saúde em dia, fogão no coração.
+    </footer>
+
+    <script src="IMC.js"></script>
+</body>
+</html>
