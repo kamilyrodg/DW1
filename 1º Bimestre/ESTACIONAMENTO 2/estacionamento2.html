@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estacionamento.css">
+    <link rel="stylesheet" href="estacionamento2.css">
     <title>Estacionamento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,8 +11,16 @@
 </head>
 <body>
     <header>
-        <h1>Estacionamento</h1>
+        <h1>Estacionamento 2</h1>
     <main>
+        <label>Data e hora de entrada:</label>
+        <input type="datetime-local" id="inputCheckin">
+        <br><br>
+
+        <label>Data e hora de saída:</label>
+        <input type="datetime-local" id="inputCheckout">
+        <br><br>
+
         <label for="inputVeiculo">Veículo Grande</label>
         <input type="checkbox" id="inputVeiculo">
         <br><br>
@@ -32,6 +40,6 @@
         <div id="resposta"></div>
     </main>
 </header>
-    <script src="Estacionamento.js"></script>
+    <script src="estacionamento2.js"></script>
 </body>
 </html>

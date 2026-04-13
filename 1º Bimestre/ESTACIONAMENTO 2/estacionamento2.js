@@ -3,8 +3,13 @@ function fCalcular (){
 
     let TamVeiculo = document.getElementById("inputVeiculo");
     let ClieFreq = document.getElementById("inputCF");
-    
-    let HorasEst = parseInt(document.getElementById("inputHoras").value);
+
+    let checkin = new Date(document.getElementById("inputCheckin").value);
+    let checkout = new Date(document.getElementById("inputCheckout").value);
+
+    let diffMs = checkout - checkin;
+
+    let HorasEst = Math.ceil(diffMs / (1000 * 60 * 60));
 
     let resposta = document.getElementById("resposta");
     let tarifacao = 5;
@@ -31,8 +36,3 @@ function fCalcular (){
 
 resposta.innerHTML = "O valor será " + tarifacao;
 }
-
-
-
-
-
