@@ -19,7 +19,7 @@ body {
 header {
      background: #ffffff; 
      text-align: center; 
-     padding: 9px; 
+     padding: 10px; 
      font-size: 1rem; 
      font-weight: 600; 
      border-bottom: 7px solid #ff7a00; 
@@ -101,7 +101,7 @@ main input[type="button"]:hover {
 footer { 
     background: #ffffff; 
     text-align: center; 
-    padding: 15px; 
+    padding: 10px; 
     border-top: 7px solid #ff7300; 
     box-shadow: 0 -2px 8px rgba(0,0,0,0.05); 
 }
