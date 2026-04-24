@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>VkNIL</title>
+    <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-    <main>
 
-     <label for="inputUser"> Usuário:</label>
-     <input type="text" id="inputUser">
-     <br><br>
+    <video autoplay loop muted playsinline id="bgVideo">
+        <source src="loginfundo.mp4" type="video/mp4">
+    </video>
 
-     <label for="inputSenha">Senha:</label>
-     <input type="text" id="inputSenha">
-     <br><br>
 
-     <input type="button" value="Entrar" id="botaoentrar" onclick="EntrarMenu()">
-     <br><br>
+        <main>
 
-     <label for="inputCad">Não tem uma conta?</label>
-     <input type="button" value="Cadastre-se" onclick="Cadastro()">
+            <label for="inputUser"> Usuário:</label>
+            <input type="text" id="inputUser">
+            <br><br>
 
-    </main>
+            <label for="inputSenha">Senha:</label>
+            <input type="password" id="inputSenha"> <br><br>
+
+            <input type="button" value="Entrar" id="botaoentrar" onclick="EntrarMenu()">
+            <br><br>
+
+            <h5>Não tem uma conta?</h5>
+            <input type="button" value="Cadastre-se" onclick="Cadastro()">
+
+        </main>
+
+
 </body>
 <script src="Login.js"></script>
 </html>
