@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Menu</title>
+
     <link rel="stylesheet" href="Menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <img src="VkNIL.jpg" class="logo-VkNIL">
+        <img src="VkNIL.png" class="logo-VkNIL" onclick= "VaiproMenu()">
         <label for="Genero">Gênero</label>
         <select id="Genero">
             <option value="Pop">Pop</option>
@@ -28,7 +34,11 @@
             <option value="CapaDisco">Capas para discos</option>
             <option value="DiscoDecoracao">Discos de decoração</option>
         </select>
+
+        <img src="user-imagem.png" class="user-imagem">
+        <img src="carrinho-imagem.png" class="carrinho-imagem">
         
+        <input type="button" value="MeuVip">
 
     </header>
     <main>
@@ -36,4 +46,5 @@
     </main>
     
 </body>
+  <script src="Menu.js"></script>
 </html>
